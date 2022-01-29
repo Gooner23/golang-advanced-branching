@@ -90,7 +90,7 @@ func main() {
 
 	for _, veh := range inventory {
 
-		switch v := veh(type) {
+		switch v := veh.(type) {
 		case car:
 			v.carDetails()
 		case bike:
@@ -213,5 +213,3 @@ func truckDetails(t *truck) {
 	showRating(t.model)
 
 }
-
-
