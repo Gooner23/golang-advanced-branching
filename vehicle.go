@@ -191,7 +191,7 @@ func showRating(model string) {
 
 }
 
-func carDetails(c *car) {
+func (c *car) carDetails() {
 
 	fmt.Printf("\n%-5v: %-8v: %-12v ", "Car", c.make, c.model)
 
@@ -199,7 +199,7 @@ func carDetails(c *car) {
 
 }
 
-func bikeDetails(b *bike) {
+func (b *bike) bikeDetails() {
 
 	fmt.Printf("\n%-5v: %-8v: %-12v ", "Bike", b.make, b.model)
 
@@ -207,7 +207,7 @@ func bikeDetails(b *bike) {
 
 }
 
-func truckDetails(t *truck) {
+func (t *truck) truckDetails() {
 
 	fmt.Printf("\n%-5v: %-8v: %-12v ", "Truck", t.make, t.model)
 
