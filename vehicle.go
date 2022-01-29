@@ -172,7 +172,7 @@ func generateRating() {
 
 func showRating(model string) {
 
-	var ratingFound bool
+	ratingFound := false
 
 	for m, r := range vehicleResult {
 
